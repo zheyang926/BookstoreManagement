@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="37e74aa91ee84cb7b86411e2c9dc2cf4" Name="Diagram1">
+        <EntityTypeShape EntityType="projectModel.author" Width="1.5" PointX="0.75" PointY="1.75" />
+        <EntityTypeShape EntityType="projectModel.book" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="projectModel.bookOrder" Width="1.5" PointX="5.25" PointY="1.75" />
+        <EntityTypeShape EntityType="projectModel.category" Width="1.5" PointX="0.75" PointY="8.125" />
+        <EntityTypeShape EntityType="projectModel.customer" Width="1.5" PointX="0.75" PointY="11.375" />
+        <EntityTypeShape EntityType="projectModel.customerOrder" Width="1.5" PointX="3" PointY="11.625" />
+        <EntityTypeShape EntityType="projectModel.invoice" Width="1.5" PointX="5.25" PointY="11.625" />
+        <EntityTypeShape EntityType="projectModel.publisher" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="projectModel.role" Width="1.5" PointX="2.75" PointY="6.375" />
+        <EntityTypeShape EntityType="projectModel.user" Width="1.5" PointX="5" PointY="6" />
+        <AssociationConnector Association="projectModel.FK_book_author" />
+        <AssociationConnector Association="projectModel.FK_book_category" />
+        <AssociationConnector Association="projectModel.FK_book_publisher" />
+        <AssociationConnector Association="projectModel.FK_bookOrder_book_ID" />
+        <AssociationConnector Association="projectModel.FK_bookOrder_customerOrder" />
+        <AssociationConnector Association="projectModel.FK_customerOrder_customer" />
+        <AssociationConnector Association="projectModel.FK_invoice_customerOrder" />
+        <AssociationConnector Association="projectModel.FK_users_role" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
